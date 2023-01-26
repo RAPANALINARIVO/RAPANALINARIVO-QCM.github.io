@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <title>QCM</title>
+        <meta charset="utf-8">
+        <link href="css/Style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="home-box custom-box">
+            <h3>Bienvenue!</h3>
+            <b>→<font color="red">C'est un quiz</font> sur <font color="blue"> les Etats Unis</font>←</b><br><br>
+            <p>Nombre total de question : <span class="total-question">5</span></p>
+            <button type="button" class="btn" onclick="commencer()">C'est parti</button>
+        </div>
+        <div class="quiz-box custom-box hide">
+            <div class="question-number"></div>
+            <div class="question-text"></div>
+            <div class="option-container">
+                
+            </div>
+            <div align="right" class="question-suivant-btn">
+                <button type="button" class="btn" onclick="next()">Suivant</button>
+            </div>
+            <div align="center" class="reponse-indicateur">
+               
+            </div>
+        </div>
+
+        <div class="result-box custom-box hide">
+            <h1>Résultat du QCM</h1>
+            <table>
+                <tr>
+                    <td>Nombre de question</td>
+                    <td><span class="total-question"> </span></td>
+                </tr>
+                <tr>
+                    <td>Nombre d'essaie(s)</td>
+                    <td><span class="total-attempt"> </span></td>
+                </tr>
+                <tr>
+                    <td>correcte(s)</td>
+                    <td><span class="total-correct"> </span></td>
+                </tr>
+                <tr>
+                    <td>Erronée(s)</td>
+                    <td><span class="total-wrong"> </span></td>
+                </tr>
+                <tr>
+                    <td>Pourcentage</td>
+                    <td><span class="percentage"> </span></td>
+                </tr>
+                <tr>
+                    <td>Votre score</td>
+                    <td><span class="total-score"> </span></td>
+                </tr>
+            </table>
+            <button type="button" class="btn" onclick = "reessayer()">Réessayer</button>
+            <button type="button" class="btn" onclick="menu()">Menu principal</button>
+        </div>
+
+        <script src="js/Question.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</htlm>
